@@ -6,11 +6,11 @@ void PrintData(int* data, size_t sizeRow, size_t sizeSeat);
 
 int main()
 {
-    int data[][4] = {{11, 12, 13, 5412},       // можно ли избавиться от числа?
-                    {21, 22, 23},
-                    {31, 32, 33},
-                    {41, 42, 43},
-                    {2847, 48924, 8725}};
+    int data[][3] = {11, 12, 13,       // можно ли избавиться от числа?
+                    21, 22, 23,
+                    31, 32, 33,
+                    41, 42, 43,
+                    2847, 48924, 8725};
 
     size_t sizeRow = sizeof(data) / sizeof(*(data + 0));
     size_t sizeSeat = sizeof(*(data + 0)) / sizeof(*((int*)data + 0 + 0));
